@@ -1,0 +1,17 @@
+[package]
+name = "retroverse-server"
+version = "0.1.0"
+edition = "2021"
+description = "RetroVerse server skeleton by Navine. A base project: it starts and answers health checks, nothing else is implemented."
+license = "MIT"
+
+[[bin]]
+name = "retroverse-server"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "signal"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.31", features = ["bundled"] }
