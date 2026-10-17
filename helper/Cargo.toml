@@ -1,0 +1,11 @@
+[package]
+name = "retroverse-helper"
+version = "0.1.0"
+edition = "2021"
+description = "RetroVerse helper DLL by Navine: a minimal exported library."
+license = "MIT"
+
+[lib]
+name = "retroverse_helper"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
